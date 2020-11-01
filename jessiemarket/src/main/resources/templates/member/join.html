@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_member.html">
+
+<div id="join" layout:fragment="content">
+	<div class="type">
+	    <div class="normal">  
+	        <a th:href="@{/member/signup?type=normal}"><img th:src="@{/img/joinNormal.PNG}"></a>  
+	    </div> 
+	    <div class="seller">
+	        <a th:href="@{/member/signup?type=seller}"><img th:src="@{/img/joinSeller.PNG}"></a>
+	    </div>
+	</div>    
+</div>
+       
+</html>

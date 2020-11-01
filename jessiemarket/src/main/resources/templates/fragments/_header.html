@@ -1,0 +1,86 @@
+<html xmlns:th="http://www.thymeleaf.org">
+   <header th:fragment="_header">
+		<div class="top">
+		    <div>
+		        <a th:if="${session.member eq null}" th:href="@{/member/login}">로그인</a>
+		        <a th:if="${session.member eq null}" th:href="@{/member/join}">회원가입</a> 
+		        <a th:if="${session.member}" th:href="@{/member/logout}">로그아웃</a>
+		        <a th:if="${session.member}" href="#">마이페이지</a>
+		        <a th:if="${session.type == 2}" th:href="@{/admin}">상품관리</a>
+		        <a th:href="@{/shop/cart}"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;장바구니</a>
+		        <a href="#">고객센터</a>
+		    </div>
+		</div>
+		<div class="logo">
+		     <div>
+		         <a th:href="@{/}"><img th:src="@{/img/header_logo.png}" alt="로고"/></a>
+		     </div>
+		</div>
+        <div class="menu">
+            <div>
+                <div>
+                    <div><a th:href="@{/sub/aboutus}">ABOUT US</a></div>
+                    <div><a href="./recipe.html">RECIPE</a></div>
+                    <div class="category"><a href="#">SHOP</a>
+                    	<ul id="gnb">
+		      				<li th:each="cate1:${session.cate1List}">
+		          				<i th:if="${cate1.code1==1}" class="fas fa-utensils"></i>
+								<i th:if="${cate1.code1==2}" class="fas fa-cheese"></i>
+								<i th:if="${cate1.code1==3}" class="fas fa-mug-hot"></i>
+			          			<a>[[${cate1.title}]]</a>
+			          			<ol>
+					            	<li th:each="cate2:${cate1.cate2List}">
+					              		<a th:href="@{/shop/list(cate1=${cate2.code1}, cate2=${cate2.code2}, sort=0)}">[[${cate2.title}]]</a>
+					            	</li>
+					            </ol>
+		                  	</li>
+                   		 </ul>
+                   	</div>
+                    <div><a th:href="@{/board/review}">REVIEW</a></div>
+                    <div><a th:href="@{/board/notice}">NOTICE</a></div>
+                    <form action="./search.html">
+                        <input type="text" name="search"/>
+                        <button><i class="fa fa-search"></i></button>
+                    </form> 
+                </div>
+                <aside class="aside_index_main">
+                 <!--최근 본 상품 배너-->
+                    <article class="recent_index_main">
+                        <div>
+                            <h1><i class="fas fa-shopping-bag"></i> 최근 본 상품</h1>
+                            <a href="#">
+                                <div class="thumb">
+                                    <img src="https://dummyimage.com/130x130/ebebeb/4d4d4d&text=130x130+product+image" alt="t1">
+                                </div>
+                                <h2>상품명</h2>
+                                <div class ="org_price">
+                                    <del>
+                                        30,000
+                                    </del>
+                                    <span>
+                                        10%
+                                    </span>
+                                </div>
+                                <div class="dis_price">
+                                    <ins>
+                                        27,000
+                                    </ins>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h1><i class="fas fa-film"></i> 최근 본 영상</h1>
+                            <div>
+                                <a href="#">
+                                    <img width="130" height="130" src="https://dummyimage.com/130x130/ebebeb/4d4d4d&text=130x130+thumbnail" alt="best video">
+                                    <h2>영상제목</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </aside>
+              </div>
+          </div>
+   </header>
+        
+</html>

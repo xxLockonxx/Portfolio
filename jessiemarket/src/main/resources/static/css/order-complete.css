@@ -1,0 +1,214 @@
+/* 주문완료 영역*/
+
+#order-complete {
+    width: 1200px;
+    min-height: 1020px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+
+    box-sizing: border-box;
+}
+#order-complete > a > h3 {
+	width: 100px;
+}
+
+#order-complete > nav {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+
+
+
+#order-complete > nav > p {
+    float: right;
+    margin-top: 10px;
+}
+
+#order-complete > section > div > h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+    padding: 10px;
+}
+
+#order-complete > section > div > h2 > i {
+    font-size: 26px;
+}
+
+#order-complete > section > div > p {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+#order-complete > section > section > article {
+    margin-top: 16px;
+}
+
+#order-complete > section > section > article > h1 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #111;
+    padding: 6px 0;
+}
+
+#order-complete table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 2px solid #000;
+}
+
+#order-complete table tr {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#order-complete table tr > th {
+    padding: 12px 0;
+    background: #fff;
+    color: #383838;
+    font-size: 0.95em;
+    text-align: center;
+    letter-spacing: -0.1em;
+}
+
+#order-complete table tr > th:last-child {
+    width: 200px;
+}
+
+#order-complete .product table tr > td {
+    text-align: center;
+}
+
+#order-complete .product table tr > td > article {
+    overflow: hidden;
+}
+
+#order-complete .product table tr > td img {
+    float: left;
+    width: 80px;
+}
+
+#order-complete .product table tr > td div {
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#order-complete .product table tr > td:last-child {
+    color: #ff006c;
+    font-weight: bold;
+    text-align: right;
+}
+
+#order-complete .product .total > td > table {
+    border: none;
+}
+
+#order-complete .product .total > td > table tr {
+    border: none;
+}
+
+#order-complete .product .total > td > table td {
+    text-align: right;
+    color: #111;
+    background: #f2f2f2;
+    font-weight: normal;
+    border-bottom: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#order-complete .product .total > td > table tr:last-child span {
+    font-weight: bold;
+    color: #ff006c;
+}
+
+#order-complete .order table tr > td {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#order-complete .order table tr > td:nth-child(1) {
+    width: 160px;
+    background: #f2f2f2;
+}
+
+#order-complete .order table tr > td:nth-child(3) {
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+    background: #f2f2f2;
+}
+
+#order-complete .order table tr > td:nth-child(4) {
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+    background: #f2f2f2;
+}
+
+
+
+#order-complete .order table span {
+    font-weight: bold;
+    color: #ff006c;
+}
+
+#order-complete .delivery table tr > td {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#order-complete .delivery table tr > td:nth-child(1) {
+    width: 160px;
+    background: #f2f2f2;
+}
+
+#order-complete .delivery table tr > td:nth-child(3) {
+    width: 200px;
+    background: #f2f2f2;
+}
+
+#order-complete .delivery table tr > td:nth-child(4) {
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+    background: #f2f2f2;
+}
+
+#order-complete .alert {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 10px;
+    padding-left: 24px;
+    color: #999;
+    box-sizing: border-box;
+}
+
+#order-complete .alert > ul {
+    list-style: inherit;
+}
+
+#order-complete > section > section > article > h1 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #111;
+    padding: 6px 0;
+}
+
+#order-complete .alert > ul > li {
+    line-height: 20px;
+}
+
+#order-complete .alert > ul > li > span {
+    position: relative;
+    left: -6px;
+}

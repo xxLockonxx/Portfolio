@@ -1,0 +1,470 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    font: normal 12px '고딕';
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+
+#member-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+/* 헤더 */
+header {
+    width: 900px;
+    height: 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header > a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 400px;
+    box-sizing: border-box;
+    
+
+}
+
+/* 메인 */
+main{
+    width: 900px;
+    min-height: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 192px;
+    padding: 0 0 40px;
+    min-width: 1200px;
+    background: #f8f8f8;
+    border-top: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+footer > ul {
+    width: 1200px;
+    height: 39px;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer > ul > li {
+    display: inline-block;
+    font-weight: bold;
+    border-right: 1px solid #d7d7d7;
+    padding: 0 10px;
+}
+
+
+
+footer > ul > li:first-child {
+    border-left : 1px solid #d7d7d7;
+}
+
+footer > article {
+    display: inline;
+    padding: 0 600px;
+    overflow: hidden;
+}
+
+footer > article > div {
+    width: 1200px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+footer p {
+    float: left;
+    height: 100%;
+    font-size: 11px;
+    line-height: 15px;
+    color: #676767;  
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 30px;          
+}
+footer p:nth-child(1){
+    width: 100px;
+    margin: 0 0 0 200px;
+}
+
+footer p > strong {
+    display: inline-block;
+    padding: 6px 15px 7px 0;
+    color: #464646;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+footer > article > div > p > img {
+  
+    width: 100px;
+    height: auto;
+
+}
+
+
+footer > button {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    margin-left: 600px;
+    display: none;
+    width: 42px;
+    height: 42px;
+    background-image: url(../img/top.png);
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+}
+
+
+
+
+/* member-join */
+
+#join {
+    width: 900px;
+    box-sizing: border-box;
+    
+}
+#join .type {
+    width: 100%;
+    height: 340px;
+    margin: 60px auto;
+}
+#join .type > div {
+    display: inline-block;
+    width: 420px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#join .type .normal {
+    float: left;
+    background-image: url("../img/join1.PNG");
+    background-size: 100%;
+}
+
+#join .type .seller {
+    float: right;
+    background-image: url("../img/join2.PNG");
+    background-size: 100%;
+}
+
+#join > div > div.normal > a > img {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 180px 130px;
+}
+
+#join > div > div.seller > a > img {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 180px 130px;
+}
+
+
+
+
+
+
+
+/* member-login */
+
+#member-login {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+#member-login .login {
+    width: auto;
+    height: auto;
+    margin: 100px 170px 100px;
+    display: inline-block;
+}
+
+#member-login .login > form {
+    width: 550px;
+    height: 220px;
+    border-top: 3px solid #81d8cf;
+    border-bottom: 1px solid #b3b3b3;
+    margin-top: 10px;
+    padding-top: 60px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+#member-login .login > form > div {
+    float: left;
+    margin: 0 10px;
+}
+
+#member-login .login > form > div > label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#member-login .login > form > div > label > span {
+    display: inline-block;
+    width: 60px;
+}
+
+#member-login .login > form > div > label > span > img {}
+#member-login .login > form > div > label > input {
+    width: 200px;
+    height: 31px;
+    padding: 0 13px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0075d4;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px #eee;
+}
+#member-login .login > form > input {
+    margin-top: 2px;
+    float: left;
+    width: 97px;
+    height: 68px;
+    background-image: url(../img/member_btn_login.gif);
+    background-size: 100%;
+    font-size: 0;
+    border: none;
+}
+
+#member-login .login > form > span {
+    clear: left;
+    display: block;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+#member-login .login > form > span > a {
+    display: inline-block;
+    height: 13px;
+    margin: 0;
+    padding: 0 15px;
+    color: #676767;
+    
+    font-weight: bold;
+}
+
+#member-login .login > img {
+
+}
+
+
+
+/* member-signup */
+
+#member-signup > h1 {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 26px;
+    border-bottom: 2px solid #000;
+  
+}
+
+#member-signup > section > h3 {
+    font-family: 'Noto Sans KR', '고딕', sans-serif;
+    font-weight: bold;
+    margin-top: 26px;
+}
+#member-signup > section > h3 > .essential {
+    color: #ef3f43;
+    margin-right: 5px;
+}
+#member-signup > section > h3 > .optional {
+    color: #01c1c4;
+    margin-right: 5px;
+
+}
+
+#member-signup > section > textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 15px;
+    border: 1px solid #bababa;
+    box-sizing: border-box;
+    resize: none;
+}
+#member-signup > section > label {
+    float: right;
+    padding-right: 1px;
+    margin: 5px;
+    font-family: 'Noto Sans KR', '고딕', sans-serif;
+    font-weight: bold;
+}
+
+#member-signup > div > input {
+    display: block;
+    background: #81d8cf;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    font-family: "Noto Sans KR", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+/* member-register */
+
+#register {}
+#register > h1 {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 26px;
+    border-bottom: 2px solid #000;
+}
+
+#register > form {}
+#register > form > section {
+    margin-top: 30px;
+    font-weight: bold;
+}
+#register > form > section > table > caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#register > form > section:nth-child(2) > span{}
+
+#register > form > section > table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: "Noto Sans KR", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#register > form > section > table > tbody {}
+#register > form > section > table > tbody > tr {}
+#register > form > section > table > tbody > tr > th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: bolder;
+}
+#register > form > section:nth-child(2) > table > tbody > tr.addr > th {
+    padding-left: 35px;
+}
+
+#register > form > section > table > tbody > tr > td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#register > form > section:nth-child(2) > table > tbody > tr:nth-child(1) > td > input {
+    font-weight: bolder;
+}
+
+#register > form > section:nth-child(2) > table > tbody > tr.addr > td > div > input {
+    margin: 5px;
+}
+
+#register > form > section:nth-child(2) > table > tbody > tr:nth-child(10) > td > input[type=file]{
+    margin-top: 8px;
+    border: none;
+}
+
+#register > form > section:nth-child(3) > table > tbody > tr.addr > td > div:nth-child(1) > input.btnZip {
+    background: #81d8cf;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+#register > form > section > table input {
+    padding: 0 8px;
+    height: 31px;
+    font-size: 14px;
+    border: 1px solid #dfe5ed;
+    vertical-align: middle;
+}
+
+#register > form > section > table input.channel_logo {
+	border: none;
+}
+
+
+#register > form > section > table .essential {
+    color: #ef3f43;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+#register > form > div > input {
+    display: block;
+    background: #81d8cf;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+

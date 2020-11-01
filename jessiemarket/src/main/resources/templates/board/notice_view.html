@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOTICE::공지보기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/sideMenu.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="top">
+                <div>
+                    <a href="./member/login.html">로그인</a> | 
+                    <a href="./member/join.html">회원가입</a> |
+                    <a href="./mypage/mypage.html">마이페이지</a> |
+                    <a href="./shop/cart.html">장바구니</a> |
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+            <div class="logo">
+                <div>
+                    <a href="./index.html"><img src="./img/header_logo.png" alt="로고"/></a>           
+                </div>
+            </div>
+            <div class="menu">
+                <div>
+                    <ul>
+                        <li><a href="./aboutus.html">ABOUT US</a></li>
+                        <li><a href="./recipe.html">RECIPE</a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./review.html">REVIEW</a></li>
+                        <li><a href="./notice.html">NOTICE</a></li>
+                        <form action="./search.html">
+                            <input type="text" name="search"/>
+                            <button><i class="fa fa-search"></i></button>
+                        </form> 
+                    </ul>
+                    <aside class="aside_index">
+                     <!--최근 본 상품 배너-->
+                        <article class="recent_index">
+                            <div>
+                                <h1><i class="fas fa-shopping-bag"></i> 최근 본 상품</h1>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="https://dummyimage.com/130x130/ebebeb/4d4d4d&text=130x130+product+image" alt="t1">
+                                    </div>
+                                    <h2>상품명</h2>
+                                    <div class ="org_price">
+                                        <del>
+                                            30,000
+                                        </del>
+                                        <span>
+                                            10%
+                                        </span>
+                                    </div>
+                                    <div class="dis_price">
+                                        <ins>
+                                            27,000
+                                        </ins>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h1><i class="fas fa-film"></i> 최근 본 영상</h1>
+                                <div>
+                                    <a href="#">
+                                        <img width="130" height="130" src="https://dummyimage.com/130x130/ebebeb/4d4d4d&text=130x130+thumbnail" alt="best video">
+                                        <h2>영상제목</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </aside>
+                </div>
+            </div>
+        </header> 
+           
+        <main>
+            <section>
+                <!-- REVIEW 영역 -->
+                <section class="NOTICE">
+                    <section>
+                        <a href="./notice.html"><h3>NOTICE</h3></a>
+                        <nav>
+                            <p><a href="./index.html">HOME</a> > <strong>NOTICE</strong></p>
+                        </nav>
+                    </section>
+                    <section class="notice">
+                        <section id="board" class="view">
+                            <table>
+                                <tr>
+                                    <td>제목</td>
+                                    <td><input type="text" name="title" value="[공지] 제시마켓 판매자님들은 주기적인 비밀번호 변경을 하세요.케이마켓 판매자님들은 주기적인 비밀번호 변경을 하세요." readonly/></td>
+                                </tr>
+                                <tr>
+                                    <td>첨부파일</td>
+                                    <td>
+                                        <a href="#">예제사진.jpg</a>
+                                        <span>1회 다운로드</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>
+                                        <textarea name="content" readonly>공지사항 연습입니다.</textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div>
+                                <a href="#" class="btnDelete">삭제</a>
+                                <a href="./notice_modify.html" class="btnModify">수정</a>
+                                <a href="./notice.html" class="btnList">목록</a>
+                            </div>
+                            <!-- 댓글입력폼 -->
+                            <section class="commentForm">
+                                <h3>댓글쓰기</h3>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="parent" value="" />
+                                    <input type="hidden" name="uid" value="" />
+                                    <input type="hidden" name="nick" value="" />
+                                    <textarea name="comment"></textarea>
+                                    <div>
+                                        <a href="#" class="btnCancel">취소</a>
+                                        <input type="submit" class="btnWrite" value="작성완료"/>
+                                    </div>
+                                </form>
+                            </section>  
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>    
+</body>
+
+<footer>
+    <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">서비스이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">전자금융거래약관</a></li>
+    </ul>
+    <article>
+        <div>
+            <p>
+                <img src="./img/footer_logo.png" alt="로고">
+            </p>
+            <p>
+                <strong>㈜제시마켓</strong>
+                <br>
+                    부산시 동래구 사직로 80 (사직동 다람파이낸스센터
+                <br>
+                    대표이사 : 김성민
+                <br>
+                    사업자등록번호 : 220-81-83676 사업자정보확인
+                <br>
+                    통신판매업신고 : 동래 10480호 Fax : 051-555-9232
+    
+            </p>
+            <p>
+                <strong>고객센터</strong>
+                <br>
+                Tel : 1234-5678 (평일 09:00~18:00)
+                <br>
+                스마일클럽/SVIP 전용 : 1522-5700 (365일 09:00~18:00)
+                <br>
+                부산시 동래구 사직로 80 다람빌딩 6층
+                <br>
+                Fax : 051-555-9232 | Mail : jessie@jessietable.co.kr
+            </p>
+        </div>
+    </article>
+    
+    <button type="button" id="top" style="display: inline-block;">상단이동</button>
+</footer>
+
+</html>

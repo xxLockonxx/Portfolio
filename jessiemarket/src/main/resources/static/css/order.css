@@ -1,0 +1,380 @@
+/* 주문결제 영역*/
+
+#order section
+ {
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#order section > section > section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#order .product > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 2px solid #000;
+    margin-top: 20px;
+}
+
+#order .product > table tr {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+#order form > .product > table th {
+    padding: 12px 0;
+    background: #fff;
+    color: #383838;
+    font-size: 0.95em;
+    text-align: center;
+    letter-spacing: -0.1em;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#order .product > table .empty {
+    display: none;
+}
+
+#order .product > table tr {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#order .product > table td:last-child {
+    font-weight: bold;
+}
+
+#order .product > table .empty td {
+    padding: 50px 0 !important;
+    text-align: center;
+    color: #777 !important;
+}
+
+#order .product > table td {
+    text-align: center;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;    
+    -webkit-rtl-ordering: logical;
+
+}
+
+#order .product > table td > article {
+    overflow: hidden;
+}
+
+#order .product > table td > article > a {
+    
+    display: inline-block;
+}
+
+#order .product > table article img {
+    width: 80px;
+    margin: 10px;
+}
+
+#order .product > table td > article > div {
+    float: left;
+    margin-top: 10px;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#order .product > table td > article > div > p {
+    text-align: left;
+    color: #777;
+    margin-top: 4px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+#order .product > table td:last-child {
+    color: #ff006c;
+    font-weight: bold;
+}
+
+#order form > input[name=del] {
+    border-color: #bdbdbd;
+    border-bottom-color: #828282;
+    background: #fafafa;
+    color: #4d4d4d;
+    padding: 6px 11px;
+    border-width: 1px;
+    margin-top: 6px;
+}
+
+
+#order form section {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+#order form section > div {
+    display: inline-block;
+}
+
+#order form section > div > article {
+    width: 560px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#order form section > div > article > h1 {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #111;
+}
+
+#order form section > div > article > div {
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+#order .delivery > div > label {
+    display: inline;
+    padding: 4px 0;
+}
+
+#order form section input {
+    color: #555;
+    font-weight: bold;
+    outline: none;
+    padding: 2px 0;
+}
+
+#order .delivery > .user span {
+    margin-left: 10px;
+    color: #888;
+}
+
+#orderForm > section > div:nth-child(1) > article.delivery > table > tbody > tr:nth-child(3) > td:nth-child(2) > input.btnZip {
+    width: 40px;
+    height: 30px;
+    font-size: 12px;
+    border-width: 1px;
+    border-color: #81d8cf;
+    border-radius: 5px;
+    border-bottom-color: #4d9993;
+    background: #81d8cf;
+    background-image: -webkit-linear-gradient(#81d8cf, #4d9993);
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#order .delivery > .address input.addr {
+    width: 400px;
+}
+
+#order .discount > div {
+    overflow: hidden;
+}
+
+#order .discount > div > p {
+    float: left;
+}
+
+#order .discount > div > label {
+    float: right;
+}
+
+#order .discount > div > label > input[type=text] {
+    display: inline-block;
+    outline: none;
+}
+
+#order .discount > div > label > input[type=button] {
+    width: 40px;
+    height: 30px;
+    font-size: 12px;
+    border-width: 1px;
+    border-color: #81d8cf;
+    border-radius: 5px;
+    border-bottom-color: #4d9993;
+    background: #81d8cf;
+    background-image: -webkit-linear-gradient(#81d8cf, #4d9993);
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#order .discount > div > span {
+    display: block;
+    margin-top: 20px;
+    color: #888;
+}
+
+#order .payment > div {
+    margin-bottom: 10px;
+}
+
+#order .payment > div > span {
+    display: inline-block;
+    color: #3a85c8;
+    margin: 6px 0;
+}
+
+#order .payment > div label {
+    margin-right: 16px;
+}
+
+#order .payment > div label > img {
+    width: 40px;
+    border-radius: 15px;
+}
+
+
+#order .payment > div input {
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
+#order form section > .alert {
+    width: 560px;
+    background-color: #f7f7f7;
+    padding: 6px;
+    padding-left: 20px;
+    color: #999;
+    box-sizing: border-box;
+}
+
+#order form section > .alert > ul {
+    list-style: inherit;
+}
+
+#order form section > .alert > ul > li {
+    line-height: 20px;
+}
+
+#order form section > .alert > ul > li > span {
+    left: -6px;
+}
+
+
+
+
+
+
+
+
+
+#order .info {
+    float: right;
+    width: 360px;
+    height: 420px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+}
+
+#order .info > h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #111;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    color: #1e1e1e;
+}
+
+#order .info > table {
+    width: 100%;
+}
+
+#order .info * {
+    font-weight: bold;
+}
+
+#order .info > table td {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#order .info > table td:last-child {
+    text-align: right;
+}
+
+#order .info > table tr:nth-last-child(1) td {
+    font-size: 20px;
+}
+
+#order .info > table tr:nth-last-child(1) td:last-child {
+    color: #ff006c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#order .info > input[type=button] {
+    width: 100%;
+    height: 56px;
+    font-size: 26px;
+    border-width: 1px;
+    border-color: #81d8cf;
+    border-radius: 5px;
+    border-bottom-color: #4d9993;
+    background: #81d8cf;
+    background-image: -webkit-linear-gradient(#81d8cf, #4d9993);
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#orderForm > div > table > tbody > tr > td > article > a {
+	float: left;
+    display: inline-block;
+}
+#orderForm > div > table > tbody > tr > td > article > div > h2 > a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 20px;
+}

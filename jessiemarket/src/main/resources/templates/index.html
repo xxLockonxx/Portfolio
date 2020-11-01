@@ -1,0 +1,206 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_main.html">
+
+ <section layout:fragment="content">
+	 <script th:src="@{/js/mainProductsList.js}"></script> 
+	 <!-- Recipe 영역 -->
+     <section class="recipe">
+         <div>
+             <h3>TOP RECIPE</h3>
+         </div>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+         <article>
+             <div>
+                 <a href="./recipe_view.html">
+                     <img src="./img/banner_logo.png" alt="banner">
+                     <h3>제시테이블</h3>
+                 </a>
+             </div>
+             <div>
+                 <a href="#">
+                     <img src="./img/main_thumbnail.png" alt="best video">
+                     <h2>::토마토와 바질, 뽀모도로 파스타::</h2>
+                 </a>
+             </div>
+         </article>
+	 </section>
+     <!-- 히트상품 영역 -->
+     <section id="hit" class="hit">
+     	<div>
+     		<h3>HIT</h3>
+     	</div>
+        <article th:each="item:${hitList}">
+          	<a th:href="@{/shop/view(code=${item.code})}">
+                 <div class="thumb">
+                   <img th:src="@{'/thumb/'+${item.cate1}+'/'+${item.cate2}+'/'+${item.thumb1}}" alt="t1">
+                 </div>
+                 <h2>[[${item.name}]]</h2>
+                 <p>[[${item.descript}]]</p>
+                 <div class="org_price">
+                   <del>[[${#numbers.formatInteger(item.price, 3, 'COMMA')}]]</del>
+                   <span>[[${item.discount}]]%</span>
+                 </div>
+                 <div class="dis_price">
+                   <ins>[[${#numbers.formatInteger(item.salePrice, 3, 'COMMA')}]]</ins>
+                   <span>[[${#numbers.formatInteger(item.delivery, 3, 'COMMA')}]]</span>
+                 </div>
+             </a>
+         </article>
+     </section>
+     <!-- 인기상품 영역 -->
+     <section id="best" class="best">
+     	<div>
+     		<h3>BEST</h3>
+     	</div>
+         <img style="display:block;margin:0 auto;" src="./img/loading.gif" alt="loading">
+     </section>
+     <!-- 추천상품 영역 -->
+     <section id="recommend" class="recommend">
+     	<div>
+     		<h3>RECOMMEND</h3>
+     	</div>
+         <img style="display:block;margin:0 auto;" src="./img/loading.gif" alt="loading">
+     </section>
+     <!-- 최신상품 영역 -->
+     <section id="new" class="new">
+     	<div>
+			<h3>NEW</h3>
+     	</div>
+         <img style="display:block;margin:0 auto;" src="./img/loading.gif" alt="loading">
+     </section>
+     <!-- 할인상품 영역 -->
+     <section id="discount" class="discount">
+	     <div>
+	         <h3>DISCOUNT</h3>     
+	     </div>
+         <img style="display:block;margin:0 auto;" src="./img/loading.gif" alt="loading">                 
+     </section>
+ </section>
+        
+</html>

@@ -1,0 +1,240 @@
+/* 헤더영역 */
+header {
+    width: 100%;
+    height: 600px;
+}
+header > div {
+    width: 100%;            
+    box-sizing: border-box;
+}
+/* 헤더의 상위 메뉴 부분 */
+header > .top {
+    height: 35px;    
+}
+header > .top > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;            
+    text-align: right;
+}
+header > .top > div > a {
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #81d8cf;
+}
+header > .top > div > a:hover {
+    color: #333;    
+}
+
+header > .top > div > a > i {
+	color: #81d8cf;
+}
+
+header > .top > div > a:nth-child(4) > i {
+	color: #81d8cf;
+}
+
+
+/* 헤더의 하위 메뉴 부분 */
+header > .bottom {
+    height: 30px;    
+}
+header > .bottom > ul {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;            
+    text-align: left;
+}
+
+header > .bottom > ul > li {
+	display: inline-block;
+}
+
+header > .bottom > ul > li > a {
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #81d8cf;
+}
+header > .bottom > ul > li > a:hover {
+    color: #333;    
+}
+/* 헤더의 로고 부분 */
+header > .logo {
+    height: 150px;
+}
+header > .logo > div {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+header > .logo > div > a {
+    position: absolute;
+    left: 500px;
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+}
+header > .logo > div > a > img {
+    width: 100%;
+    height: auto;
+}
+
+/* 헤더의 메뉴 */
+header > .menu {
+    height: 46px;
+    box-sizing: border-box;
+}
+header > .menu  > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+header > .menu > div > div {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 0;
+}     
+header > .menu > div > div > div {
+    display: inline-block;
+    width: 185px;
+    height: 46px;
+    background-color: #81d8cf;
+    border-radius: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+}
+header > .menu > div > div > div > a:hover {
+    color: #333;
+}
+header > .menu > div > div > div > a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+}
+header > .menu > div > div > div:nth-child(1) > a{
+    margin: 9px 40px 0px 42px;
+}
+header > .menu > div > div > div:nth-child(2) > a{
+    margin: 9px 40px 0px 60px;
+}
+header > .menu > div > div > div:nth-child(3) > a{
+    margin: 9px 40px 0px 65px;
+}
+header > .menu > div > div > div:nth-child(4) > a{
+    margin: 9px 40px 0px 56px;
+}
+header > .menu > div > div > div:nth-child(5) > a{
+    margin: 9px 40px 0px 56px;
+}
+
+header > .menu .category > ul {
+	display: none;
+}
+header > .menu .category:hover > ul {
+	position: absolute;
+	display: block;
+	width: 185px;
+	height: auto;
+	background: #81d8cf;
+	margin-top: 2px;
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+header > .menu .category:hover > ul > li > a, i{
+	font-size: 20px;
+	padding: 3px;
+	color: #fff;
+}
+
+header > .menu .category:hover > ul > li > a:hover {
+    color: #333;
+}
+
+#gnb ol {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+#gnb ol > li {
+    width: 100%;
+    height: 20px;
+}
+#gnb ol > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 70px;
+    color: #fff;
+}        
+#gnb ol > li > a:hover {
+    color: #333;
+}
+
+
+
+header > .menu  > div > div > form {
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    height: 46px;
+    margin: 2px 5px;
+}
+header > .menu  > div > div > form > input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #81d8cf;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+header > .menu  > div > div > form > button {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    color: #81d8cf;
+    outline:none;
+}
+
+header > .menu  > div > div > form > button > i {
+	color: #81d8cf;
+}
+	
+/* 슬라이더 섹션 */
+
+header > .slider {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header > .slider > .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    margin-bottom: 0px;
+}
+
+
+
+header > section.slider > div > div.bx-viewport > ul > li > a > img {
+    width: 1960px;
+    height: 330px;
+    margin: auto;
+}

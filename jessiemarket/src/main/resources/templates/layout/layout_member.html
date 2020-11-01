@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- pom.xml - thymeleaf-layout-dialect 추가 -->
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">	  
+<head>
+    <meta charset="UTF-8">
+    <title>제시마켓::회원</title>
+    <link rel="stylesheet" th:href="@{/css/member.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script th:src=@{/js/pageMover.js}></script>
+    <script th:src=@{/js/uidCheck.js}></script>
+    <script th:src=@{/js/passCheck.js}></script>
+    <script th:src=@{/js/nameCheck.js}></script>
+	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	<script th:src="@{/js/zipcode.js}"></script>
+	<script th:inline="javascript">
+  	$(function(){
+  		$('.btnZip').click(function(){
+  			zipcode();
+  		});
+  	});
+  	</script>
+    
+</head>
+<body>
+    <div id="member-wrapper">
+        <header>
+            <a th:href="@{/index}"><img th:src="@{/img/header_logo.png}" alt="로고" width="100px"></a>
+        </header>
+        <main>
+        	<!-- member content 시작 -->
+        	<div layout:fragment="content"></div>
+        	<!-- member content 끝 -->
+        </main>        
+        
+        <!-- footer 시작 -->
+        <footer th:include="/fragments/_footer.html::_footer"></footer>
+        <!-- footer 끝 -->
+        
+    </div>    
+</body>
+</html>

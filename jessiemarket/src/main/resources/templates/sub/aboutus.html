@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_sub.html">
+
+ <section layout:fragment="content">
+	 <!-- About Us 영역 -->
+     <section class="aboutus">
+         <section>
+             <a th:href="@{/aboutus.html}"><h3>ABOUT US</h3></a>
+             <nav>
+                 <p><a th:href="@{/index.html}">HOME</a> > <strong>ABOUT US</strong></p>
+             </nav>
+         </section>
+         <article>
+             <p class="aboutus">
+		               제시마켓은<br> 
+		               요리 레시피를 공유하고<br>
+		               영상에서 소개한 재료 그대로를 판매/구매할 수 있도록<br> 
+		               도와주는 온라인 마켓입니다.<br>
+		               영상을 통해 요리를 배우고 재료들을 구매해 보세요.<br>
+		               또한 자신만의 요리법을 자랑하고 재료를 판매해보세요.<br>
+		               제시마켓과 함께하며 건강하고 맛있게 식사해요.<br>
+             </p>
+             <img th:src="@{/img/header_logo.png}" alt="로고" width="120px" height="90px"/>
+         </article>
+     </section>
+</section>
+        
+</html>
