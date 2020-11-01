@@ -5,12 +5,12 @@
  <section layout:fragment="content">
                 <section class="REVIEW">
                     <section>
-                        <a th:href="@{/sub/review}"><h3>REVIEW</h3></a>
+                        <a th:href="@{/board/list}"><h3>REVIEW</h3></a>
                         <nav>
                             <p><a th:href="@{/index}">HOME</a> > <strong>REVIEW</strong></p>
                         </nav>
                     </section>
-                    <section class="review">
+                    <section>
                         <section id="board" class="list">
                             <article>
                                 <table border="0">
@@ -92,15 +92,15 @@
                                         <td>24</td>
                                     </tr>
                                 </table>
+                                <!-- 글쓰기 버튼 -->
+                          		<a th:href="@{/board/write}" class="btnWrite">글쓰기</a>
                             </article>
                                                 
-                            <!-- 글쓰기 버튼 -->
-                            <a href="#" class="btnWrite">글쓰기</a>
+                            
                         
                         </section>
         
                             
-                        </article>
                     </section>
 
                     <!--상품목록 페이지번호-->

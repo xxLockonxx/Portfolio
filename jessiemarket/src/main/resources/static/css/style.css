@@ -725,15 +725,16 @@ main > section > section > .review {
     color: #fff;
 }
 
-#board.list > .btnWrite {
-    position: absolute;
-    bottom: 14px;
-    right: 0;
+#board.list > article > .btnWrite {
+	display: inline-block;
+   	margin-top: 10px;
+   	margin-left: 1110px;
+   
 }
 /* 게시판-글보기 */
 
 #board.view {
-    display: inline;
+    
 }
 #board.view > div {
     padding: 16px 0;

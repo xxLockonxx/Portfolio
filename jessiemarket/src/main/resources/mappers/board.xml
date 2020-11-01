@@ -4,30 +4,44 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="kr.co.jessiemarket.dao.BoardDao">
-	<!-- 
-	<insert id="insertUser">
-		INSERT INTO `USER3` VALUES (#{uid}, #{name}, #{hp}, #{age});		
-	</insert>
-	
-	<select id="selectUser" resultType="kr.co.ch11.vo.UserVO">
-		SELECT * FROM `USER3` WHERE `uid`=#{uid};
+	<select id="SELECT_BOARDS" resultType="kr.co.jessiemarket.vo.BoardVo">
+		SELECT a.*, b.nick FROM `jessie_ARTICLE` AS a
+		JOIN `jessie_MEMBER` AS b ON	a.uid = b.uid
+		WHERE `parent`=0 AND `cate`=#{cate}
+		ORDER BY `seq` DESC
+		LIMIT #{start}, 10;
 	</select>
 	
-	<select id="selectUsers" resultType="kr.co.ch11.vo.UserVO">
-		SELECT * FROM `USER3`;
+	<select id="SELECT_COUNT_BOARD" resultType="int">
+		SELECT COUNT(*) FROM `jessie_ARTICLE` WHERE `parent`=0 AND `cate`=#{cate};
 	</select>
 	
-	<update id="updateUser">
-		UPDATE `USER3` SET		
-		`name`=#{name},
-		`hp`=#{hp},
-		`age`=#{age} 
-		WHERE `uid`=#{uid};		
+	<select id="SELECT_LATEST" resultType="kr.co.jessiemarket.vo.BoardVo">
+		SELECT * FROM `jessie_ARTICLE` 
+		WHERE `parent`=0 AND `cate`=#{cate} 
+		ORDER BY `rdate` DESC 
+		LIMIT 5;		
+	</select>
+
+	<!--
+	<select id="SELECT_MEMBERS">
+		SELECT * FROM `MEMBER`;
+	</select>	
+	
+	<select id="SELECT_MEMBER">
+		SELECT * FROM `MEMBER` WHERE `uid`=#{uid};
+	</select>
+	
+	<update id="UPDATE_MEMBER">
+		UPDATE `MEMBER` SET 
+			`name`=#{name},
+			`hp`=#{hp},
+			`pos`=#{pos},
+			`dep`=#{dep} WHERE `uid`=#{uid};		
 	</update>
 	
-	<delete id="deleteUser">
-		DELETE FROM `USER3` WHERE `uid`=#{uid};
-	</delete>
--->
+	<delete id="DELETE_MEMBER">
+		DELETE FROM `MEMBER` WHERE `uid`=#{uid};
+	</delete> -->
 	
 </mapper>
